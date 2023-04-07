@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+    </head>
+    <body>
+        {% block content %}
+        <h1>Home</h1>
+        {% if user.is_authenticated %}
+        <h3>Welcome {{ user.username }}</h3>
+        <!-- django logout to home -->
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit">Logout</button>
+        {% else %}
+
+        <a href="{% url 'login' %}">Login</a>
+        {% endif %} {% endblock %}
+    </body>
+</html>
