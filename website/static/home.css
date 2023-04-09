@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+#hero {
+    width: 100%;
+    height: 805px;
+    background: url(home.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 32px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.navbar .menu a {
+    color: #ffffff;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.hero-box {
+    width: 50%;
+    margin-top: 200px;
+}
+
+.hero-heading {
+    color: #ffffff;
+    font-size: 50px;
+    line-height: 65px;
+}
+
+.hero-desc {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 27px;
+    padding: 30px 0;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 700px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: #cac7ff;
+}
+
+::placeholder {
+    color: #cac7ff;
+}
+
+.search button img {
+    width: 25px;
+}
+
+.search button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
+
+.card-body1 {
+    padding: 50px;
+    background: #1e1e2e;
+    color: white;
+}
+
+.card-body2 {
+    padding: 50px;
+    background: #3a2a49;
+    color: white;
+}
+
+.tombol {
+    color: white;
+    background: transparent;
+    border-radius: 10px;
+    padding: 15px;
+    width: 90px;
+}
+
+.recc {
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+}
+
+.recc h1 {
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 10px;
+}
+
+.box-recc {
+    background: #3a2a49;
+    margin: 0px;
+}
