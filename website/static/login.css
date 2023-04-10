@@ -57,6 +57,11 @@ h1 {
     font-size: 48px;
 }
 
+.message {
+    color: red;
+    font-size: 14px;
+}
+
 .form-group {
     margin-top: 32px;
 }
