@@ -1,18 +1,33 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Footer Design</title>
         <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="{% static 'login.css' %}" />
+        <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
     </head>
     <body>
+        <div class="navbar">
+            <div class="logo">
+                <a href="#" class="logo1">Budaya</a>
+                <a href="#" class="logo2">Dwipantara</a>
+            </div>
+            <div class="menu">
+                <a href="#">Pulau</a>
+                <a href="#">Tentang Kami</a>
+                <a href="#">Kontak</a>
+            </div>
+        </div>
+        <hr style="height: 2px; border-width: 0; color: gray; background-color: gray" />
+        {% block content %} {% endblock %}
         <footer class="footer">
             <div class="container">
                 <div class="row">
                     <div class="footer-col">
-                        <img src="image.png" />
+                        <img src="{% static 'image.png' %}" alt="nama-logo" class="logo2" />
                     </div>
                     <div class="footer-col"></div>
                     <div class="footer-col">
