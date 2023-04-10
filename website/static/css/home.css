@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 #hero {
     width: 100%;
     height: 805px;
-    background: url(home.jpeg);
+    background: url(../img/home.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,20 +20,8 @@
     margin: 0 auto;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-
 .logo {
     color: white;
-}
-
-.navbar .menu a {
-    color: #ffffff;
-    margin-left: 20px;
-    font-size: 14px;
 }
 
 .hero-box {

@@ -1,0 +1,39 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar .logo {
+    font-size: 20px;
+}
+
+.navbar .logo .logo1 {
+    margin-top: 10px;
+    margin-left: 70px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar .logo .logo2 {
+    margin-top: 0px;
+    display: flex;
+    margin-left: 100px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar .menu {
+    display: flex;
+    margin-right: 50px;
+}
+
+.navbar .menu a {
+    color: #ffffff;
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
