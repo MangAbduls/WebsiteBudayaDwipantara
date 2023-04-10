@@ -29,17 +29,24 @@
                 <h1>MASUK</h1>
                 <hr style="height: 2px; border-width: 0; color: gray; background-color: gray; width: 100px; text-align: center; display: flex" />
 
+                {% for message in messages %}
+                <div class="message">
+                    <a class="close" href="#" data-dismiss="alert"></a>
+                    {{ message }}
+                </div>
+                {% endfor %}
+
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Nama:</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Masukkan nama Anda" />
+                    <label for="nama">Nama:</label>
+                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama Anda" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan alamat email Anda" />
+                    <label for="email`">Email:</label>
+                    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Masukkan alamat email Anda" />
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputPassword1">Kata Sandi:</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Masukkan kata sandi email Anda" />
+                    <label for="password">Kata Sandi:</label>
+                    <input type="password" class="form-control" name="password" placeholder="Masukkan kata sandi email Anda" />
                 </div>
                 <button type="submit">KIRIM</button>
 
