@@ -19,12 +19,16 @@ body {
 .navbar .logo .logo1 {
     margin-top: 10px;
     margin-left: 70px;
+    text-decoration: none;
+    color: #ffffffb2;
 }
 
 .navbar .logo .logo2 {
     margin-top: 0px;
     display: flex;
     margin-left: 100px;
+    text-decoration: none;
+    color: #ffffffb2;
 }
 
 .navbar .menu {
