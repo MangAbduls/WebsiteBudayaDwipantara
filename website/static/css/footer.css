@@ -25,6 +25,7 @@ ul {
 
 .footer-col-kanan {
     margin-top: 25px;
+    font-family: "poppins" !important;
 }
 
 .list-footer-col-kanan1 {
@@ -41,7 +42,8 @@ ul {
 
 .footer-col-kanan ul li a {
     color: #bbbbbb;
-    font-size: 16px;
+    font-size: 20px;
+    text-decoration: none !important;
 }
 
 .footer-col-kanan ul li a:hover {
