@@ -17,7 +17,7 @@
     <body>
         <section id="hero">
             {% include 'header.html' %}
-            <div class="container">
+            <div class="container-hero">
                 <div class="herobox">
                     <div class="search-container">
                         <form class="search">
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-        <div class="card-group" id="list-pulau">
+        <div class="card-group card-asli" id="list-pulau">
             <div class="card" style="width: 180px; background: #1e1e2e; border-right: 1px solid #ffffffbf">
                 <img src="{% static 'img/monas.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
@@ -64,7 +64,7 @@
                 <div class="card-body">
                     <h5 class="card-title">YOGYAKARTA</h5>
                     <p class="card-text">Yogyakarta adalah ibu kota sekaligus pusat pemerintahan dan perekonomian dari Daerah Istimewa Yogyakarta, Indonesia. Kota ini adalah kota besar yang mempertahankan konsep tradisional dan budaya Jawa.</p>
-                    <a href="#" class="btn text-light border border-white">LIHAT</a>
+                    <a href="{% url 'jogja' %}" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
             <div class="card" style="width: 180px; background: #3a2a49; border-left: 1px solid #ffffffbf">

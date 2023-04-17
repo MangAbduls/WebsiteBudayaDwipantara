@@ -16,7 +16,7 @@ body {
     padding-top: 32px;
 }
 
-.container {
+.container-hero {
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -104,6 +104,9 @@ body {
     cursor: pointer;
 }
 
+.card-asli {
+    border-radius: 0px !important;
+}
 .card-img-top {
     width: 550px !important;
     height: auto;

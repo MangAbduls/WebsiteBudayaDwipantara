@@ -24,5 +24,6 @@ urlpatterns = [
     path('accounts/', include('login.urls')),
     path('search/', include('search.urls')),
     path('logout/', views.logout_view, name='logout'),
+    path('kota/jogja', TemplateView.as_view(template_name='jogja.html'), name='jogja'),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
 ]

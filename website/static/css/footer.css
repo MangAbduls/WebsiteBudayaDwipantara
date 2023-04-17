@@ -1,11 +1,10 @@
-.container {
-    max-width: 1170px;
-    margin: auto;
+.container-footer {
+    max-width: 100%;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 ul {
@@ -14,6 +13,7 @@ ul {
 
 .footer {
     background-color: #44445a;
+    width: 100%;
 }
 
 .footer-col {
@@ -29,11 +29,12 @@ ul {
 }
 
 .list-footer-col-kanan1 {
-    margin-left: 150px;
+    margin-left: 20px;
 }
 
 .list-footer-col-kanan2 {
     margin-left: 20px;
+    margin-right: 15em;
 }
 
 .footer-col-kanan ul li:not(:last-child) {
