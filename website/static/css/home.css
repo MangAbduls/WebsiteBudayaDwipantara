@@ -107,10 +107,16 @@ body {
 .card-asli {
     border-radius: 0px !important;
 }
+
+.card-kota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .card-img-top {
-    width: 550px !important;
+    width: 28.5vw !important;
     height: auto;
-    margin-left: 25%;
     margin-top: 20px;
     margin-bottom: 20px;
 }
@@ -118,7 +124,6 @@ body {
 .card-body {
     padding: 50px;
     color: white;
-    margin-left: 23%;
     max-width: 600px;
     text-align: justify;
 }
