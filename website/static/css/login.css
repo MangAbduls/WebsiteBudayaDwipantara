@@ -1,9 +1,9 @@
 body {
-    background: #1d1e2e;
-    font-family: "Jacques Francois";
+    background: #1d1e2e !important;
+    font-family: "Jacques Francois" !important;
     font-size: 14px;
     color: #ffffffb2;
-    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .navbar .logo .logo1 {

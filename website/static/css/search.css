@@ -1,0 +1,116 @@
+body {
+    background: #1d1e2e;
+    font-family: "Jacques Francois";
+    font-size: 14px;
+    color: #ffffffb2;
+    box-sizing: border-box;
+}
+.search-container {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 30px;
+    background: #d9d9d980;
+    border-radius: 15px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.search input {
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24px 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "poppins";
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search button img {
+    width: 30px;
+}
+
+.search button {
+    border: 0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(4px) saturate(180%);
+    cursor: pointer;
+}
+
+.search-header {
+    font-family: "Poppins";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 60px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    margin-left: 219px;
+}
+.foto-kota {
+    margin-left: 219px;
+}
+
+.kota-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    color: white;
+}
+
+.judul-kota {
+    font-family: "Jacques Francois";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 79px;
+    letter-spacing: 0.1em;
+}
+
+.deskripsi-kota {
+    font-family: "Poppins";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    max-width: 946px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.btn-lihat {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 2px solid white;
+    height: 59px;
+    width: 297px;
+    margin-bottom: 280px;
+    background: #1d1e2e;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 30px;
+}

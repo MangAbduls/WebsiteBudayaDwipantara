@@ -6,6 +6,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="{% static 'js/app.js' %}"></script>
         <link rel="stylesheet" href="{% static 'css/header.css' %}" />
         <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
         <link rel="stylesheet" href="{% static 'css/home.css' %}" />
@@ -16,12 +17,12 @@
     <body>
         <section id="hero">
             {% include 'header.html' %}
-            <div class="container">
+            <div class="container-hero">
                 <div class="herobox">
                     <div class="search-container">
                         <form class="search">
-                            <input type="text" placeholder="Cari" />
                             <button type="submit"><img src="{% static 'img/search.png' %}" /></button>
+                            <input type="text" name="searchBar" id="searchBar" placeholder="Cari" />
                         </form>
                     </div>
                     <div class="hero-heading">
@@ -39,58 +40,75 @@
             </div>
         </div>
 
-        <div class="card-group">
-            <div class="card" style="width: 180px; background: #1e1e2e; border-right: 1px solid #ffffffbf">
+        <div class="card-group card-asli" id="list-pulau">
+            <div class="card card-kota" style="width: 180px; background: #1e1e2e; border-right: 1px solid #ffffffbf">
                 <img src="{% static 'img/monas.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">JAKARTA</h5>
-                    <p class="card-text">JAKARTA, atau secara resmi bernama Daerah Khusus Ibukota JAKARTA adalah ibu kota negara dan kota terbesar di Indonesia. Menurut sistem pembagian administratif Indonesia, JAKARTA merupakan provinsi dengan status daerah khusus. Sementara menurut pengertian secara umum, JAKARTA merupakan kota metropolitan</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <p class="card-text">Jakarta, atau secara resmi bernama Daerah Khusus Ibukota Jakarta adalah ibu kota negara dan kota terbesar di Indonesia. Menurut sistem pembagian administratif Indonesia, Jakarta merupakan provinsi dengan status daerah khusus. Sementara menurut pengertian secara umum, Jakarta merupakan kota metropolitan</p>
+                    <a href="#" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
-            <div class="card" style="width: 180px; background: #1e1e2e; border-left: 1px solid #ffffffbf">
+            <div class="card card-kota" style="width: 180px; background: #1e1e2e; border-left: 1px solid #ffffffbf">
                 <img src="{% static 'img/bali.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">BALI</h5>
                     <p class="card-text">Bali adalah sebuah wilayah provinsi yang terletak di Indonesia. Ibu kotanya adalah Denpasar. Provinsi Bali terletak di bagian barat Kepulauan Nusa Tenggara.</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <a href="#" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
         </div>
-        <div class="card-group">
-            <div class="card" style="width: 180px; background: #3a2a49; border-right: 1px solid #ffffffbf">
+        <div class="card-group" id="list-pulau">
+            <div class="card card-kota" style="width: 180px; background: #3a2a49; border-right: 1px solid #ffffffbf">
                 <img src="{% static 'img/jogja.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">YOGYAKARTA</h5>
                     <p class="card-text">Yogyakarta adalah ibu kota sekaligus pusat pemerintahan dan perekonomian dari Daerah Istimewa Yogyakarta, Indonesia. Kota ini adalah kota besar yang mempertahankan konsep tradisional dan budaya Jawa.</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <a href="{% url 'jogja' %}" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
-            <div class="card" style="width: 180px; background: #3a2a49; border-left: 1px solid #ffffffbf">
+            <div class="card card-kota" style="width: 180px; background: #3a2a49; border-left: 1px solid #ffffffbf">
                 <img src="{% static 'img/pontianak.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">PONTIANAK</h5>
                     <p class="card-text">Pontianak adalah ibu kota Provinsi Kalimantan Barat, Indonesia yang sekaligus menjadi pusat pemerintahan dan perekonomian dari Provinsi Kalimantan Barat.</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <a href="#" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
         </div>
-        <div class="card-group">
-            <div class="card" style="width: 180px; background: #1e1e2e; border-right: 1px solid #ffffffbf">
+        <div class="card-group" id="list-pulau">
+            <div class="card card-kota" style="width: 180px; background: #1e1e2e; border-right: 1px solid #ffffffbf">
                 <img src="{% static 'img/sabang.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">SABANG</h5>
                     <p class="card-text">Sabang adalah salah satu kota di Aceh, Indonesia. Kota ini berupa kepulauan di seberang utara pulau Sumatra, dengan Pulau Weh sebagai pulau terbesar. Kota Sabang merupakan zona ekonomi bebas Indonesia, ia sering disebut sebagai titik paling utara dan barat Indonesia, tepatnya di Pulau Rondo.</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <a href="#" class="btn text-light border border-white">LIHAT</a>
                 </div>
             </div>
-            <div class="card" style="width: 180px; background: #1e1e2e; border-left: 1px solid #ffffffbf">
+            <div class="card card-kota" style="width: 180px; background: #1e1e2e; border-left: 1px solid #ffffffbf">
                 <img src="{% static 'img/jayapura.png' %}" class="card-img-top" alt="..." />
                 <div class="card-body">
                     <h5 class="card-title">JAYAPURA</h5>
                     <p class="card-text">Kota Jayapura adalah sebuah kota dan juga ibu kota dari provinsi Papua, Indonesia. Kota ini merupakan ibu kota provinsi yang terletak paling Timur di Indonesia, dan berbatasan langsung dengan negara tetangga Papua Nugini, yang terletak di teluk Jayapura. Kota ini didirikan oleh Kapten Infanteri F.J.P.</p>
-                    <a href="#" class="btn text-light border border-white rounded">Lihat</a>
+                    <a href="#" class="btn text-light border border-white">LIHAT</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="container-penilaian">
+            <div class="col-penilaian-kiri">
+                <h1>BERI PENILAIAN</h1>
+                <p>Bagaimana pengalaman anda selama berada di website kami. Berikan penilaian Anda disini</p>
+            </div>
+            <div class="col-penilaian-kanan">
+                <label for="inputEmail">Email*</label> <br />
+                <input type="email" placeholder="Alamat Email" name="inputEmail" /> <br />
+                {% if user.is_authenticated %}
+                <p>Hi, {{user.username}}</p>
+                <a href="{% url 'logout' %}" class="btn text-light border border-white">Keluar</a>
+                {% else %}
+                <a href="{% url 'login' %}" class="btn text-light border border-white">Masuk</a>
+                {% endif %}
             </div>
         </div>
         {% include 'footer.html' %}
