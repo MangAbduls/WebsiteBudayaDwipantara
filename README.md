@@ -1,2 +1,2 @@
 Budaya Dwipantara
-https://mangsabduls.pythonanywhere.com/
+https://budaya-dwipantara.vercel.app/
